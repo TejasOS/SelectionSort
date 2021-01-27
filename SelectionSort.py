@@ -4,7 +4,7 @@ def selectionSort(arrToBeSorted):
     toBeSwitched = None
     # For each element in array to be sorted, loop through array and see what minimum value is after that element
     for i in range(len(arrToBeSorted)):
-        minNum = i
+        minNum = i  # Update minNum to be i so that we start at ith element
         for j in range(i+1, len(arrToBeSorted)):
             if (arrToBeSorted[j] < arrToBeSorted[minNum]):
                 minNum = j
